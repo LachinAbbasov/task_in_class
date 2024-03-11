@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="">
+      <h1>Register</h1>
+      <label for="name">Adiniz:</label>
+      <input type="text" type="text" placeholder="Name" name="name" id="name" />
+      <label for="surname">Soyadiniz</label>
+      <input
+        type="text"
+        type="text"
+        placeholder="Surname"
+        name="surname"
+        id="surname"
+      />
+      <p>Cinsiyyet:</p>
+      <input name="gender" id="male" type="radio" />
+      <label for="male">Kisi</label>
+      <input name="gender" id="famale" type="radio" />
+      <label for="famale">Qadin</label>
+      <div>
+        <label for="birthday">Dogum gununuzu qeyd edin.</label>
+        <input type="date" id="birthday" name="birthday" />
+      </div>
+      <label for="age">Yasinizi qeyd edin.</label>
+      <input type="age" id="age" name="age" />
+      <>
+        <label for="">Hansi dilleri bilirsiniz?</label>
+        <div>
+          <input
+            type="checkbox"
+            id="language1"
+            name="language1"
+            value="language1"
+          />
+          <label for="language1">Ingilis dili</label>
+          <input
+            type="checkbox"
+            id="language2"
+            name="language2"
+            value="language2"
+          />
+          <label for="language2">Fransiz dili</label>
+          <input
+            type="checkbox"
+            id="language3"
+            name="language3"
+            value="language3"
+          />
+          <label for="language3">Alman dili</label>
+        </div>
+      <label for="development">Muraciet etmek istediyiniz saheni secin:</label>
+      <select name="fronted development" id="development"> <option value="fd">Frontend Development</option> <option value="bd">Backend Development</option></select>
+    </div>
+
+    <div>
+         <label for="image">Seklinizi elave edin:</label>
+         <input type="file" id="image" name="image">
+    </div>
+    <div>
+        <label for="time">Sizinle meet olunmasini istediyiniz saati secin:</label>
+        <input type="time" id="time">
+    </div>
+    <div>
+    <label for="color">Sevdiyiniz reng hansidir?</label>
+    <input type="color" id="color">    
+    </div>
+    <div>
+        <label for="mesagge">Ozunuz haqqinda etrafli melumat yazin:</label>
+        <div>
+             <textarea name="text" id="mesagge" cols="30" rows="10" placeholder="mesagge"></textarea>
+        </div>
+        <div>
+      <button type="reset">Reset</button><button type="submit">Gonder</button>
+        </div>
+       
+       
+    </div>
+
+   
+    
+    
+    
+
+    </form>
+  </body>
+</html>
