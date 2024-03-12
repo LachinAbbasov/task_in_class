@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Box 2</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+      .two {
+        background-color: aquamarine;
+        border: 8px solid blue;
+        width: 300px auto;
+        padding: 40px;
+        margin: 30px;
+        transition: all 0.3s ease;
+      }
+      .child {
+        background-color: rgba(255, 160, 176, 0.907);
+        border: 8px solid red;
+        width: 500px auto;
+        padding: 60px;
+        margin: 30px;
+        transition: all 0.3s ease;
+      }
+      .child:hover {
+        background-color: red;
+        border: 1px solid rgba(255, 160, 176, 0.907);
+      }
+      .two:hover {
+        background-color: darkblue;
+        border: 1px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="one">
+        <ul>
+          <li>From Lorem ipsum dolor sit amet consectetur adipisicing elit:</li>
+        </ul>
+      </div>
+      <div class="child">
+        <div class="two">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            est, voluptas minus commodi minima sequi dolore, eaque magni aperiam
+            eligendi perspiciatis laudantium doloribus doloremque facere quam
+            perferendis ducimus, adipisci temporibus? Dolor aut, saepe explicabo
+            voluptas odio ut velit praesentium beatae.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

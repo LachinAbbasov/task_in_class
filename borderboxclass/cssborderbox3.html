@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Box 3</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .one {
+        background-color: rgba(179, 123, 232, 0.92);
+        border: 5px solid purple;
+        width: 300px auto;
+        padding: 50px;
+        margin: 30px;
+      }
+      .three {
+        background-color: rgba(179, 123, 232, 0.92);
+        border: 5px solid purple;
+        width: 300px auto;
+        padding: 50px;
+        margin: 30px;
+      }
+      .second li:last-child {
+        list-style-type: none;
+      }
+      .first li:hover {
+        color: beige;
+        font-size: x-large;
+      }
+      .second li:hover {
+        color: beige;
+        font-size: x-large;
+      }
+      .first li {
+        transition: all 0.3s ease;
+      }
+      .second li {
+        transition: all 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <u><strong>LIST 1</strong>:Lorem, Ipsum Dolar</u>
+      <div class="two">
+        <ul class="first">
+          <li style="color: blue">Lorem</li>
+          <li>Lorem Ipsum</li>
+          <li>Lorem Ipsum Dolar</li>
+        </ul>
+      </div>
+    </div>
+    <div class="three">
+      <div>
+        <br />
+        <u><strong>LIST 1</strong>:Lorem, Ipsum Dolar</u>
+      </div>
+      <div class="four">
+        <ul class="second">
+          <li>Lorem</li>
+          <li>Lorem Ipsum</li>
+          <li>Lorem Ipsum Dolar</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
