@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-style: border-box;
+}
+h2{
+    background-color: #5656a6;
+    color: white;
+    text-align: center;
+    font-size: small;
+    height: 32px;
+    width: 1317px;
+    padding: 5px;
+}
