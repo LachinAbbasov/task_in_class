@@ -1,0 +1,51 @@
+*{margin: 0;
+padding: 0;
+border-style: border-box;
+list-style: none;
+text-decoration: none;}
+
+
+#alone nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightgray;
+}
+.logotext{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logotext ul{
+    display: flex;
+    gap:10px;
+    font-size: 22px;
+}
+.fa-caret-down{
+    font-size: small;
+}
+.logotext i{
+    margin-left: 5px;
+    font-size: 20px;}
+.logotext a{color: black;
+    font-size: small;
+
+}
+.basket a{color: black;
+}
+.logotext h1{font-size: small;}
+#but{font-size: 8px;
+margin:5px;
+padding:3px 5px 3px;
+}
+span{border-radius: 40%;
+border: 1.5px solid black;
+color: white;
+background-color:black;}
+
+
+
+
+
+
