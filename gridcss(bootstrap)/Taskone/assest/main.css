@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  border-style: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+.navbar {
+  background-color: rgb(44, 62, 80) !important;
+  display: fixed !important;
+  justify-content: space-between !important;
+  padding: 25px !important;
+}
+.navbar a {
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: #1abc9c !important;
+}
+
+.section-one {
+  background-color: #1abc9c;
+  height: 675px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilelogo {
+  width: 15rem;
+  margin-top: -155px;
+  margin-right: 5px;
+}
+.img-1 {
+  margin-bottom: 3rem !important;
+}
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  vertical-align: middle;
+}
+/* .container {
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+} */
+ #sectionone .section-two{
+    display: flex !important;
+    justify-content: center !important;
+    align-items:center !important;
+}
