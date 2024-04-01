@@ -1,144 +1,189 @@
-// Task 1:
-// Daxil edilən yaşa görə istifadəçinin pensiya yaşına çatıb-çatmadığını tapan proqram yazın.
-// Ədəd müsbət və 125-dən balaca olmalıdır.
-// let age =prompt("yasinizi daxil edin")
-// if (age>=65){
-//     alert("Siz pensiya yasina catmisiniz")
-    
-// }
-// else{
-//    alert ("Siz pensiya yasina catmamisiniz")
-// }
-
-// Task 2:
-
-// Daxil edilən 3 rəqəmə əsasən üçbucağın tərəfinə görə hansı növü olduğunu müəyyənləşdirən proqram yazın.Hər üç rəqəm müsbət olmalıdır.
-
-// let num1=Number(prompt("birinci teref"))
-// let num2=Number(prompt("ikinci teref"))
-// let num3=Number(prompt("ucuncu teref"))
-// if (num1==num2 && num2==num3 && num1==num3){
-//     alert("Beraber terefli ucbucag")
-
-// }
-// else if( num1==num2||num2==num3||num1==num3 ){
-//     alert("Beraber yanli ucbucag")
-// }
-// else {
-//     alert("Muxtelif Terefli")
-// }
-
-// Task 3:
-
-// Daxil edilən rəqəmin cüt yoxsa tək olmasını tapın.Ədəd müsbət olmadır.
-// let num=Number(prompt("ededi daxil et"))
-// if (num>0){
-//     if(num%2==0){
-//         alert("cut eded")
-
+// Bir funksiya yazın,string şəklində 2 parametr qəbul etsin.Funksiyanız bu sözlərin anagram olub-olmadığını tapmalıdır. Anagram sözlər yerləri fərqli olsa da eyni hərflərdən təşkil olunmuş sözlərdir.
+// function isAnagram(str1, str2) {
+//     if (str1.length !== str2.length) {
+//         return false;
 //     }
-//     else{alert("tek ededdir")}
+//     let sortedStr1 = str1.split('').sort().join('');
+//     let sortedStr2 = str2.split('').sort().join('');
 
-// }
-// else{
-//     alert("eded menfidir")
-// }
-
-// Task 4:
-
-// Daxil edilən 1-12 arasındakı müsbət rəqəmlərdən hər hansı birinə uyğun olan ayın adını yazan proqram yazın. Məsələn 2 daxil edilsən Fevral yazılmalıdır.(switch ilə yazılmalıdır.) 1-dən kiçik və 12-dən böyük rəqəm daxil edildikdən consolda  "Zəhmət olmasa sadəcı 1-12 aralığında ədəd daxil edin" yazılsın.
-// let mounths=;
-// switch (mounths) {
-//   case 1:
-//     day = "Sunday";
-//     co
-//     break;
-//   case 1:
-//     day = "Monday";
-//     break;
-//   case 2:
-//     day = "Tuesday";
-//     break;
-//   case 3:
-//     day = "Wednesday";
-//     break;
-//   case 4:
-//     day = "Thursday";
-//     break;
-//   case 5:
-//     day = "Friday";
-//     break;
-//   case  6:
-//     day = "Saturday";
+//     return sortedStr1 === sortedStr2;
 // }
 
+// console.log(isAnagram("listen", "silent")); // true
+// console.log(isAnagram("hello", "words"));   // false
 
-// Task 5:
+// Bir funksiya yazın. İki parametr qəbul etsin. Biri cümlə digəri isə o cümlə içərisindəki söz olsun. Sizin funksiyanız həmin sözün indeksini tapsın.
 
-// Daxil edilən müsbət ədədin 3 və 5 ədədinə eyni anda bölünüb-bölünmədiyini tapan proqram yazın.
+// a = function (c, s) {
+//   console.log(c.indexOf(s));
+// };
+// a("Salam Rena", "Rena");
+
+// a = function (c, s) {
+//   if (c.includes(s)) {
+//     console.log("var");
+//   } else {
+//     console.log("yoxdu");
+//   }
+// };
+
+//   a("salam necesiniz sagolun", "sagolun");
+
+// Daxil edilən cümlənin bütün sözlərinin ilk hərfini böyük edərək qaytaran funksiya yazın.
+// sentenceCapitalization("a short sentence")
+// Expected Output:
+// "A Short Sentence"
+
+// a="a short sentence"
+// a=a.split(" ");
+// let newStrin=""
+// b=" "
+
+// // console.log(a)
+
+// for(i=0;i<a.length;i++){
+//   newStrin+=a[i].replace( a[i][0], a[i][0].toUpperCase())+b
+
+// }
+
+// console.log(newStrin)
+
+let originalProducts = [
+  {
+    id: 4,
+    supplierId: 2,
+    categoryId: 3,
+    quantityPerUnit: "48 - 6 oz jars",
+    unitPrice: 22,
+    unitsInStock: 53,
+    unitsOnOrder: 0,
+    reorderLevel: 0,
+    discontinued: true,
+    name: "Chef Anton's Cajun Seasoning",
+    supplier: {
+      id: 2,
+      companyName: "New Orleans Cajun Delights",
+      contactName: "Shelley Burke",
+      contactTitle: "Order Administrator",
+      address: {
+        street: "P.O. Box 78934",
+        city: "New Orleans",
+        region: "LA",
+        postalCode: 70117,
+        country: "USA",
+        phone: "(100) 555-4822",
+      },
+    },
+    category: {
+      id: 3,
+      description: "Desserts candies and sweet breads",
+      name: "Confections",
+    },
+  },
+  {
+    id: 5,
+    supplierId: 2,
+    categoryId: 2,
+    quantityPerUnit: "36 boxes",
+    unitPrice: 21.35,
+    unitsInStock: 0,
+    unitsOnOrder: 0,
+    reorderLevel: 0,
+    discontinued: true,
+    name: "Chef Anton's Gumbo Mix",
+  },
+  {
+    id: 6,
+    supplierId: 3,
+    categoryId: 2,
+    quantityPerUnit: "12 - 8 oz jars",
+    unitPrice: 25,
+    unitsInStock: 120,
+    unitsOnOrder: 0,
+    reorderLevel: 25,
+    discontinued: false,
+    name: "Grandma's Boysenberry Spread",
+  },
+  {
+    id: 7,
+    supplierId: 3,
+    categoryId: 7,
+    quantityPerUnit: "12 - 1 lb pkgs.",
+    unitPrice: 30,
+    unitsInStock: 15,
+    unitsOnOrder: 0,
+    reorderLevel: 10,
+    discontinued: false,
+    name: "Uncle Bob's Organic Dried Pears",
+  },
+  {
+    id: 8,
+    supplierId: 3,
+    categoryId: 2,
+    quantityPerUnit: "12 - 12 oz jars",
+    unitPrice: 40,
+    unitsInStock: 6,
+    unitsOnOrder: 0,
+    reorderLevel: 0,
+    discontinued: false,
+    name: "Northwoods Cranberry Sauce",
+  },
+  {
+    id: 9,
+    supplierId: 4,
+    categoryId: 6,
+    quantityPerUnit: "18 - 500 g pkgs.",
+    unitPrice: 97,
+    unitsInStock: 29,
+    unitsOnOrder: 0,
+    reorderLevel: 0,
+    discontinued: true,
+    name: "Mishi Kobe Niku",
+  },
+  {
+    id: 10,
+    supplierId: 4,
+    categoryId: 8,
+    quantityPerUnit: "12 - 200 ml jars",
+    unitPrice: 31,
+    unitsInStock: 31,
+    unitsOnOrder: 0,
+    reorderLevel: 0,
+    discontinued: false,
+    name: "Ikura",
+  },
+];
 
 
-// Task 6:
-
-// Daxil edilən müsbət ədədin 2-yə tam bölünüb-bölünmədiyini tapan proqram yazın. Əgər tam bölünürsə, consolda bölündü yazılsın,tam bölünmürsə qalıq hesablanıb yazılsın.
-
-// Task 7:
-
-// Daxil edilən 2 ədədin hasilinin müsbət yoxsa mənfi ədəd olmasını göstərən funksiya yazın.
-
-
-// Task 8:
-
-// Daxil edilən müsbət ədədin 1-100 arasında olub-olmadığını tapan proqram yazın.
-
-// Task 9:
-
-// Daxil edilən 3 müsbət ədədin ən böyüyünü tapan proqram yazın.
-
-// Task 10:
-
-// Tələbənin daxil etdiyi bala görə A B C D E F qiymətlərindən hansını aldığını müəyyənləşdirrən proqram yazın. 90 və yuxarı üçün "A", 80-89 üçün "B", 70-79 üçün "C", 60-69 üçün "D", 59 və daha aşağı qiymətlər üçün "F". Daxil edilən rəqəm müsbət, sıfırdan böyük və 100-dən kiçik olmalıdır.
-
-
-// Task 11:
-
-// İstifadəçi yaşını daxil edir.Yaş 18-dən azdırsa "Yeniyetmə", 18-64 yaşdadırsa "Yetkin", 65 və daha yuxarıdırsa "Yaşlı" kimi çıxış edən proqram yazın.Ədəd müsbət olmalıdır.
-
-
-// Task 11:
-
-// Daxil edilən saata uyğun "Sabahınız xeyir", "Günortanız xeyir", "Axşamınız xeyir" yazan proqram yazın. Ədəd müsbət və 0-24 arasında olmalıdır.
-
-
-// Task 12:
-
-// Daxil edilən x və y ədədlərinin aşağıdakı şərtlərinə görə hesablamasını edən proqram yazın. Bu şərtlərdən başqası daxil edilərsə consolda "Sadəcə tələb olunan şərtləri daxil edin yazılsın."
-
-// Əgər x>0 və y<0 isə 4x+2y+4 ifadəsini hesablayın.
-// Əgər x>0 və y=0 isə 2x-y+3 ifadəsini hesablayın.
-// Əgər x<0 və y>0 isə 3x+4y+3 ifadəsini hesablayın.
 
 
 
 
-// Task 13:
+// Məhsulların Ortalam qiymətini tapın.
 
-// İstifadəçidən 3 dəyər alın bunlardan ikisi rəqəm, biri isə riyazi əməl olsun.Riyazi əmələ görə rəqəmlər üzərində əməliyyat aparsın. Riyazi əməllər toplama,çıxma,vurma və bölmə olacaq.Bu dörd əməldən başqası daxil edilərsə console "Zəhmət olmasa düzgün əməl daxil edin yazılsın." Taskı switch-case ilə yazın.
-
-
-// Task 14:
-
-//  Kişik bir lotoreya oyunu yazın. Bu oyunda komputer bir random rəqəm yaradacaq, istifadəçidən isə promptla bir rəqəm alınacaq. Şərtlər belədir:
-// 1. Daxil edilən random ədədlə istifadəçinin daxil etdiyi ədəd üst-üstə düşərsə alertlə " Siz 1000 manat qazandınız yazın".
-// 2. Daxil edilən random ədədlə istifadəçinin daxil etdiyi ədədin hər iki mərtəbəsi uyğun gələrsə, amma mərtəbələrin yeri dəyişikdirsə alertlə " Siz 500 manat qazandınız" yazın. Yəni random ədəd 45-dir amma istifadəçi 54 yazıbsa o 500 manat qazanır.
-// 3. Daxil edilən random ədədlə istifadəçinin daxil etdiyi ədədin bir mərtəbəsi uyğun gələrsə,alertlə " Siz 100 manat qazandınız" yazın. Yəni random ədəd 32-dir istifadəçi 42 yazıbsa o 100 manat qazanır.
-// 4. Bu hallardan heç biri deyilsə, alertlə "Bir daha sınayın" yazın.
+// price = 0;
+// for (i = 0; i < originalProducts.length; i++) { 
+//   price+= originalProducts[i].unitPrice
+// }
+// console.log(price/originalProducts.length)
 
 
+// Stok miqdarı 10-dan az olan məhsulların sayı nə qədərdir.
 
 
+counter=0
+
+for(i=0;i<originalProducts.length;i++){
+    if(originalProducts[i].unitsInStock<10){
+        counter++
+    }
+   
+} console.log(counter)
 
 
+// Adında x hərfi olan neçə məhsul var.
 
-
-
+// discontinued true olan neçə məhsul var.
+// categoryId-si 4 olan məhsulları consola yazdır.
+// Ən bahalı məhsulu tapın.
+// Ən ucuz məhsulu tapın.
