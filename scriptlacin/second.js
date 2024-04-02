@@ -171,14 +171,14 @@ let originalProducts = [
 // Stok miqdarı 10-dan az olan məhsulların sayı nə qədərdir.
 
 
-counter=0
+// counter=0
 
-for(i=0;i<originalProducts.length;i++){
-    if(originalProducts[i].unitsInStock<10){
-        counter++
-    }
+// for(i=0;i<originalProducts.length;i++){
+//     if(originalProducts[i].unitsInStock<10){
+//         counter++
+//     }
    
-} console.log(counter)
+// } console.log(counter)
 
 
 // Adında x hərfi olan neçə məhsul var.
@@ -187,3 +187,6 @@ for(i=0;i<originalProducts.length;i++){
 // categoryId-si 4 olan məhsulları consola yazdır.
 // Ən bahalı məhsulu tapın.
 // Ən ucuz məhsulu tapın.
+
+
+
