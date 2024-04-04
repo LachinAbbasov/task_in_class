@@ -86,12 +86,37 @@
 // yigmalisiniz. Yeni array-de element-ler object sheklinde olmalidir ve {fullName: D.JOHN,salary:2000,department:'IT',age:45,id:IT2842} bu formada
 // olmalidir.
 
-// function searchFunction(employesArray){
-//     const filterEmployee=[]
-// employesArray.forEach(function(employee){
-// if(employee.experienceYear>5 && employee.experienceYear>20,employee.experienceYear<=35 )
-// })
-//     }
+function searchFunction(employesArray){
+    const filterEmployee=[]
+    employeesArray.forEach(function(employee) {
+        if (employee.experienceYear > 5 && employee.experienceYear <= 35 &&
+            employee.age >= 20 && employee.age <= 35) 
+            {
+            const newEmployee = {
+                fullName: employee.fullName,
+                department: employee.department,
+                salary: employee.salary,
+                age: employee.age,
+                id: employee.generateID()
+            };
+            filteredEmployees.push(newEmployee);
+        }
+    });
+    return filteredEmployees;
+};
+
+const employees = [
+    new Employee("Lacin", 5),
+    new Employee("Ilkin", 3, 50000),
+    new Employee("Ramal", 7, 60000),
+    new Employee("Leman", 4, 45000),
+    new Employee("Fidan", 2, 40000)
+];
+
+const result = searchEmployee(employees);
+console.log(result);
+
+    
 
 
 
