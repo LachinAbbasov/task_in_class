@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-style: border-box;
+}
+
+.row{
+    text-align: center;
+}
+input{
+   margin-top: 15px;
+   width: 100%;
+}
+.sizes{
+    width: 100%;
+    margin-right: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
