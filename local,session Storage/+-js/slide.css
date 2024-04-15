@@ -1,0 +1,9 @@
+#increaseBtn,#decreaseBtn,#resetBtn {
+background-color: aqua;
+}
+
+#counter{
+    color: red;
+    font-weight: 800;
+    font-size: x-large;
+}
