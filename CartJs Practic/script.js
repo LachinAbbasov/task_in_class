@@ -1,6 +1,7 @@
+const api_link="https://fakestoreapi.com/products"
 async function logMovies() {
     try {
-        const response = await fetch("https://fakestoreapi.com/products");
+        const response = await fetch(api_link);
         const movies = await response.json();
         
         const container = document.querySelector('.container');
@@ -21,7 +22,7 @@ async function logMovies() {
                         <p class="card-text"><b>Rating:</b> ${movie.rating.rate} <i class="fa-solid fa-star" style="color: #FFD43B;"></i></p>
                         
                     </div>
-                    <a href="open.html" class="btn btn-outline-warning" >Open</a>
+                    <a href="open.html?id=${movie.id}" class="btn btn-outline-warning" >Open</a>
                 </div>
             `;
 
