@@ -44,7 +44,7 @@ export default function App() {
           <CardContent>
             <CardMedia />
             <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
-              Dark-Light 
+            Ag-Qara-Qirmizi 
             </Typography>
             <Typography sx={{ mb: 1.5 }} color="text.secondary">
              Salam Af-105
