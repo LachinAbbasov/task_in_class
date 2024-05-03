@@ -1,0 +1,30 @@
+
+
+.App {
+    font-family: Arial, sans-serif;
+  
+    h1 {
+      text-align: center;
+    }
+  
+    .todo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+  
+      input[type="checkbox"] {
+        margin-right: 10px;
+      }
+  
+      &.completed {
+        span {
+          text-decoration: line-through;
+          color: gray;
+        }
+      }
+
+      }
+    }
+  
+  
+  
