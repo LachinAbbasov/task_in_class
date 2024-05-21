@@ -1,0 +1,37 @@
+.card {
+    position: relative;
+    .watchimg {
+      position: relative;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  
+    .Addcard {
+      position: absolute;
+      bottom: -40px; 
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 20px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: bottom 0.3s ease-in-out;
+  
+      &:hover {
+        background-color: #555;
+      }
+    }
+  
+    &:hover .Addcard {
+      bottom: 10px;
+    }
+  }
+  
+  .watchname, .watchprice {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
