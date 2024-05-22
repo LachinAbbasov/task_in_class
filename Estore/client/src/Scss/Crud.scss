@@ -1,0 +1,19 @@
+.card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    .imgcard {
+      position: relative;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  
+}
+  
+  .imgname, .imgprice,.imgoldprice {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
